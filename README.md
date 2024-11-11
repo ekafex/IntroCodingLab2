@@ -1,2 +1,3 @@
-# IntroCodingLab2
-Intro to coding LAB 2 FSHN Phys.
+# Introduction to Computing LAB
+
+Intro to coding LAB 2 FSHN Physics.
