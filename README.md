@@ -1,29 +1,11 @@
 # Introduction to Computing LAB
 
-Intro to coding LAB FSHN Physics II.
+Intro to coding LAB FSHN Physics II course 2024.
+It contains the following topics:
 
-1. Download in your computer the zip file (**Files.7z**)
-2. Unpack it
-3. Enjoy!
+1. **Linux** basics command line (CLI) with BASH
+2. General purpose CLI editor: **vim**
+3. **Markdown** for jupyter-notebook editor (is going to be used with python)
+4. Fundamentals of programming with **Python**
 
-More info coming soon...
-
-----
-----
-
-For Latex:
- 1. https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes
- 2. https://latex-tutorial.com/tutorials/
- 3. https://www.tug.org/twg/mactex/tutorials/ltxprimer-1.0.pdf
-
-
----
----
-
-For jupyter-notebook Markdown
-1. https://www.datacamp.com/tutorial/markdown-in-jupyter-notebook
-2. https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd
-
-
-
-
+Information for each topic is contained in its respective folder.
