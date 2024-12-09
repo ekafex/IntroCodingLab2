@@ -2,11 +2,10 @@
 
 **Table of Contents**
 
-[TOC]
 
 ## Introduction
 
-[Ref: ryanstutorials.net](https://ryanstutorials.net/linuxtutorial/vi.php)
+[Source: ryanstutorials.net](https://ryanstutorials.net/linuxtutorial/vi.php)
 
 Master the Vi text editor and learn how to make complex edits on your files with less time and effort. 
 
