@@ -23,4 +23,7 @@ For Latex:
 For jupyter-notebook Markdown
 1. https://www.datacamp.com/tutorial/markdown-in-jupyter-notebook
 2. https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd
-3. 
+
+
+
+
