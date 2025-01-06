@@ -44,20 +44,20 @@
 
 > [!NOTE]
 >
-> **To build a computer, we exploit and control physical phenomena** to:
+> **To build a computer, we exploit and control physical phenomena**
 >
-> 1. Represent states of information (e.g. as electric voltage 0 & 5V etc).
-> 2. Manipulate these states via transitions (e.g. able to build logic operators OR, AND or NOT via transistors etc).
-> 3. Preserve and measure the states effectively (e.g. perform accurate measurements to retrieve information such as magnetic pin in HDD etc...).
-> 4. Be powered by energy to drive state changes.
+> To construct a computer, a physical system must exhibit and allow control over phenomena that enable the following:
+>
+> 1. **Information Representation**: The system can encode discrete states to represent information (e.g., binary states like 0 and 1 as voltage levels, magnetic orientations, or quantum states).
+> 2. **State Manipulation**: The system supports reliable transitions between states, enabling logical operations such as OR, AND, and NOT.
+> 3. **State Preservation and Retrieval**: The system can store states stably and allows accurate measurement or retrieval of these states to recover information.
+> 4. **Energy Utilization**: The system can be powered to drive state changes and sustain computational processes.
 
 
 
-#### **Is electronics computers the only way to build computers?**
+#### **Are electronics computers the only way to build computers?**
 
-Research **Quantum Computers** and or more general [**Unconventional computing**](https://en.wikipedia.org/wiki/Unconventional_computing).
-
-**Significance:** Unconventional computing explores the boundaries of computation, seeking systems that are more efficient, faster, or capable of solving problems beyond the reach of classical computers. By mimicking natural processes or leveraging unique physical phenomena, these approaches aim to revolutionize how we process information.
+No. Research in **Quantum Computing** and **Unconventional Computing** explores alternative systems that leverage unique physical phenomena or natural processes to achieve greater efficiency, speed, or solve problems beyond classical computing's capabilities. Read [**Unconventional computing**](https://en.wikipedia.org/wiki/Unconventional_computing) for more details.
 
 ---
 
@@ -450,5 +450,4 @@ When starting with a new programming language, focus on these key areas:
 ---
 
 **Tip:** Start simple and gradually build your knowledge as you get comfortable with the language! 
-
 
