@@ -38,6 +38,33 @@
 
 
 
+---
+
+---
+
+> [!NOTE]
+>
+> **To build a computer, we exploit and control physical phenomena** to:
+>
+> 1. Represent states of information (e.g. as electric voltage 0 & 5V etc).
+> 2. Manipulate these states via transitions (e.g. able to build logic operators OR, AND or NOT via transistors etc).
+> 3. Preserve and measure the states effectively (e.g. perform accurate measurements to retrieve information such as magnetic pin in HDD etc...).
+> 4. Be powered by energy to drive state changes.
+
+
+
+#### **Is electronics computers the only way to build computers?**
+
+Research **Quantum Computers** and or more general [**Unconventional computing**](https://en.wikipedia.org/wiki/Unconventional_computing).
+
+**Significance:** Unconventional computing explores the boundaries of computation, seeking systems that are more efficient, faster, or capable of solving problems beyond the reach of classical computers. By mimicking natural processes or leveraging unique physical phenomena, these approaches aim to revolutionize how we process information.
+
+---
+
+---
+
+
+
 ### Computational Problem-Solving Process (step-by-step):
 
 ```mermaid
@@ -175,27 +202,7 @@ graph LR
 
 
 
-### Algorithm Efficiency:
-
-### **Algorithm Efficiency**:
-Algorithm efficiency refers to how well an algorithm performs in terms of **time** and **space** resources. It is typically analyzed in terms of:
-
-1. **Time Complexity**: 
-   - Describes how the runtime of an algorithm changes as the size ($n$) of the input grows. It's usually expressed using **Big-O notation** (e.g.,  $O(n)$, $O(n^2)$, etc.), which provides an upper bound on the growth rate of the algorithm’s execution time.
-   
-2. **Space Complexity**: 
-   - Describes how the memory usage of an algorithm grows with the size of the input. Similar to time complexity, space complexity is also analyzed using **Big-O notation** (e.g., $O(1)$, $O(n)$).
-
-### Key Points:
-
-- **More efficient algorithms** typically run faster and require less memory, making them preferable for larger inputs.
-- An algorithm’s efficiency is crucial for **scalability**, especially when dealing with large datasets or complex problems.
-
-In simple terms, efficient algorithms solve problems **faster** and **with fewer resources**, making them more practical for real-world applications.
-
 ---
-
-
 
 ### **Turing Machine Definition**:
 
@@ -224,6 +231,7 @@ A Turing machine consists of:
 #### Operation:
 
 The Turing machine operates by:
+
 1. Reading the symbol on the current tape cell.
 2. Based on the symbol and the current state, it uses the transition function to:
    - Write a new symbol on the tape (or leave the current symbol unchanged).
@@ -235,8 +243,6 @@ The process repeats until the machine reaches a **halting state** (either **acce
 #### Significance:
 
 A Turing machine is considered a **universal model of computation**, as it can simulate any computer algorithm or function, given sufficient time and memory. It forms the foundation of the **theory of computation** and provides a formal framework for understanding **computational problems** and **complexity**.
-
----
 
 
 
@@ -256,5 +262,193 @@ In summary, while a Turing machine is an abstract concept, a computer is a physi
 
 
 
+---
+
+### Algorithm Efficiency:
+
+Algorithm efficiency refers to how well an algorithm performs in terms of **time** and **space** resources. It is typically analyzed in terms of:
+
+1. **Time Complexity**: 
+   - Describes how the runtime of an algorithm changes as the size ($n$) of the input grows. It's usually expressed using **Big-O notation** (e.g.,  $O(n)$, $O(n^2)$, etc.), which provides an upper bound on the growth rate of the algorithm’s execution time.
+   
+2. **Space Complexity**: 
+   - Describes how the memory usage of an algorithm grows with the size of the input. Similar to time complexity, space complexity is also analyzed using **Big-O notation** (e.g., $O(1)$, $O(n)$).
+
+### Key Points:
+
+- **More efficient algorithms** typically run faster and require less memory, making them preferable for larger inputs.
+- An algorithm’s efficiency is crucial for **scalability**, especially when dealing with large datasets or complex problems.
+
+In simple terms, efficient algorithms solve problems **faster** and **with fewer resources**, making them more practical for real-world applications.
+
+
+
+#### Examples:
+
+#### a) Searching Algorithm
+
+Searching algorithms try to find if a target value (x) is element of a list. 
+
+1. **Linear Search  - O(n)**: *Naive searching by sequentially scans each element in the list.*
+2. **Binary Search - O(log n)**: *Efficiently searches in sorted data by halving the search space.*
+
+
+
+**Linear Search**
+
+This is a straightforward approach where we sequentially check each element of the array to find the target.
+**Steps:**
+
+1. Start from the first element in the array.
+2. Compare the current element with the target value.
+3. If the current element matches the target, stop and return the index of the element.
+4. If not, move to the next element and repeat the process.
+5. If the end of the array is reached without finding the target, conclude that the target is not in the array.
+
+**Illustration**
+
+* Array: `[3, 1, 4, 1, 5]`, Target: `4`
+* Steps:
+  * Check index 0: 3 ≠ 4
+  * Check index 1: 1 ≠ 4
+  * Check index 2: 4 = 4 → Found at index 2. 
+
+
+
+**Binary Search**
+
+This is an efficient method that works only on sorted arrays. It repeatedly divides the search space in half.
+
+1. Start from the first element in the array.
+2. Compare the current element with the target value.
+3. If the current element matches the target, stop and return the index of the element.
+4. If not, move to the next element and repeat the process.
+5. If the end of the array is reached without finding the target, conclude that the target is not in the array.
+
+**Illustration**
+
+* Sorted Array: [1, 3, 4, 5, 7, 9], Target: 5 (array has n=6 elements and indexes 0-5)
+* Steps:
+  * Check middle element (index 2): 4 ≠ 5 → Target is greater, search [5, 7, 9].
+  * Check middle element (index 3): 5 = 5 → Found at index 3.
+
+
+
+#### b) Sorting Algorithm
+
+1. **Bubble Sort - O(n²)**: *Naive Sorting Algorithm*
+2. **Merge Sort - O(n log n)**: *Efficient Sorting Algorithm*
+
+
+
+**Bubble Sort**
+
+This algorithm repeatedly compares adjacent elements and swaps them if they are in the wrong order.
+
+**Steps:**
+
+1. Start from the beginning of the array.
+2. Compare each pair of adjacent elements:
+   * If the current element is greater than the next element, swap them.
+   * Otherwise, leave them as is.
+3. Continue this process for the entire array.
+4. After each full pass, the largest unsorted element will be at its correct position.
+5. Repeat the process for the remaining unsorted portion of the array until no swaps are needed.
+
+**Illustration:**
+
+* Array: [4, 3, 2, 1]
+* Steps:
+  * Pass 1: Compare and swap → [3, 2, 1, 4]
+  * Pass 2: Compare and swap → [2, 1, 3, 4]
+  * Pass 3: Compare and swap → [1, 2, 3, 4]
+
+
+
+**Merge Sort**
+
+This algorithm uses a divide-and-conquer strategy to recursively divide the array into smaller parts, sort them, and merge them back together.
+
+**Steps:**
+
+1. Divide the array into two halves.
+2. Recursively repeat step 1 for each half until each part contains a single element.
+3. Merge the sorted halves together:
+   * Compare the smallest elements of both halves.
+   * Place the smaller element into the merged array.
+   * Repeat until all elements are merged.
+
+**Illustration:**
+
+* Array: [4, 3, 2, 1]
+* Steps:
+  * Divide: [4, 3] and [2, 1] → [4] [3] and [2] [1]
+  * Merge: [3, 4] and [1, 2] → [1, 2, 3, 4]
+
+
+
+---
+
+
+
+---
+
+
+
+## Learning a New Programming Language: Beginner's Guide
+
+When starting with a new programming language, focus on these key areas:
+
+#### 1. **Syntax and Basics**
+
+- Learn how to:
+  - **Declare variables.**
+  - **Write functions.**
+  - **Use loops (`for`, `while`).**
+  - **Make decisions with conditionals (`if`, `else`).**
+
+#### 2. **Data Types and Structures**
+
+- Understand:
+  - Basic types: **numbers, strings, booleans.**
+  - Collections (containers): **lists, arrays, dictionaries** (or similar).
+
+#### 3. **Error Handling**
+
+- Study how the language manages errors, such as using `try` and `catch` or similar mechanisms.
+
+#### 4. **Programming Paradigms**
+
+- Identify if the language supports:
+  - **Object-Oriented Programming (OOP)**: Classes, objects.
+  - **Functional Programming**: Higher-order functions and immutability.
+
+#### 5. **Libraries and Tools**
+
+- Explore:
+  - The **standard library for built-in functionalities**.
+  - Popular tools and frameworks that enhance productivity.
+
+#### 6. **Environment Setup**
+
+- Learn how to:
+  - Use an **Integrated Development Environment (IDE).**
+  - Run programs and debug errors effectively.
+
+#### 7. **Community and Documentation**
+
+- Use resources like:
+  - Official documentation.
+  - Online forums, tutorials, and communities.
+
+#### 8. **Practice**
+
+- Apply your learning by:
+  - Working on small projects.
+  - Solving practice problems to strengthen your understanding.
+
+---
+
+**Tip:** Start simple and gradually build your knowledge as you get comfortable with the language! 
 
 
