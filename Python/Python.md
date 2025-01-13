@@ -486,7 +486,7 @@ Here is a collection of references and resources for learning Python, ranging fr
    - Focuses on practical projects like automating tasks, working with files, and web scraping.
    - [Website with free chapters](https://automatetheboringstuff.com/)
 
-2. **"Python Crash Course" by Eric Matthes**
+2. **[Python Crash Course: A Hands-On, Project Based Introduction to Programming](https://ehmatthes.github.io/pcc_3e/): by Eric Matthes** *(Highly recommend)* 
    - A hands-on guide to Python programming with examples and projects.
    - Covers basics and moves into intermediate concepts like web apps and data visualization.
 
@@ -539,9 +539,3 @@ Here is a collection of references and resources for learning Python, ranging fr
    - Offers problem sets to build Python skills through challenges.
 
 
-
-
-
-
-
-https://ehmatthes.github.io/pcc_3e/
